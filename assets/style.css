@@ -1,4 +1,4 @@
-@font-face{font-family:"Lalezar";src:url(fonts/lalezar.woff2) format("woff2");font-display:swap}
+@font-face{font-family:"Potk";src:url(fonts/potk.woff2) format("woff2");font-display:swap}
 @font-face{font-family:"Vazirmatn";src:url(fonts/vazirmatn-arabic-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
 @font-face{font-family:"Vazirmatn";src:url(fonts/vazirmatn-arabic-700-normal.woff2) format("woff2");font-weight:700;font-display:swap}
 @font-face{font-family:"Vazirmatn";src:url(fonts/vazirmatn-arabic-900-normal.woff2) format("woff2");font-weight:900;font-display:swap}
@@ -11,7 +11,7 @@
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{
   background:var(--paper);color:var(--ink);
-  font-family:"Lalezar","Vazirmatn",system-ui,sans-serif;
+  font-family:"Potk","Vazirmatn",system-ui,sans-serif;
   overflow-x:hidden;min-height:100vh;
 }
 button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;-webkit-tap-highlight-color:transparent}
@@ -30,9 +30,9 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;-webki
 @keyframes wiggle{0%,100%{transform:none}20%{transform:rotate(-8deg) scale(1.05)}40%{transform:rotate(7deg) scale(1.05)}60%{transform:rotate(-5deg)}80%{transform:rotate(3deg)}}
 
 /* ---------- category chips ---------- */
-.chips{position:sticky;top:0;z-index:20;display:flex;gap:7px;justify-content:center;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;
+.chips{position:sticky;top:0;z-index:20;display:flex;gap:5px;justify-content:center;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;
   padding:12px 12px 10px;background:linear-gradient(var(--paper) 80%,rgba(251,240,222,0));margin-top:6px}
-.chip{flex:none;font-size:clamp(14px,4vw,17px);padding:6px clamp(10px,3.4vw,16px) 4px;border:2.5px solid var(--ink);border-radius:999px;background:var(--cup);
+.chip{flex:none;font-size:clamp(13px,3.7vw,17px);padding:6px clamp(8px,2.6vw,16px) 4px;border:2.5px solid var(--ink);border-radius:999px;background:var(--cup);
   transition:background .2s,color .2s,transform .15s}
 .chip:active{transform:scale(.94)}
 .chip.on{background:var(--ink);color:var(--paper)}
@@ -51,9 +51,9 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;-webki
 .foot{flex:none;width:18px;height:18px;align-self:center;color:var(--green);transform:rotate(-20deg)}
 .item:nth-child(even) .foot{transform:rotate(15deg) translateY(3px)}
 .name{display:flex;flex-direction:column}
-.note{font-family:"Vazirmatn",sans-serif;font-weight:700;font-size:13px;color:var(--ink-soft);line-height:1.2;margin-top:-2px}
+.note{font-size:14px;color:var(--ink-soft);line-height:1.2;margin-top:-2px}
 .lead{flex:1;border-bottom:2px dotted rgba(67,33,26,.3);transform:translateY(-6px);min-width:16px}
-.price{font-family:"Vazirmatn",sans-serif;font-weight:900;font-size:18px;white-space:nowrap}
+.price{font-size:20px;white-space:nowrap}
 .price small{font-weight:400;font-size:11px;margin-inline-start:3px}
 
 /* ---------- syrup add-on ---------- */
