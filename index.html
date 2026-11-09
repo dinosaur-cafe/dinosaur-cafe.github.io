@@ -9,7 +9,9 @@
 <link rel="icon" href="assets/img/cup-dino.png?v=4">
 <link rel="preload" href="assets/fonts/potk.woff2?v=4" as="font" type="font/woff2" crossorigin>
 <meta http-equiv="Cache-Control" content="no-cache">
-<link rel="stylesheet" href="assets/style.css?v=4">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<link rel="stylesheet" href="assets/style.css?v=5">
 </head>
 <body>
 
@@ -44,11 +46,6 @@
   <div class="checker"></div>
 </div>
 
-<script>
-  // always fetch the newest menu (prices/items), then start the page
-  (function(){var v=Date.now(),d=document.createElement('script');d.src='assets/menu-data.js?t='+v;
-    d.onload=function(){var a=document.createElement('script');a.src='assets/app.js?v=4';document.body.appendChild(a)};
-    document.body.appendChild(d)})();
-</script>
+<script src="assets/boot.js?v=5"></script>
 </body>
 </html>
